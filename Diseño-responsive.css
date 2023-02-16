@@ -1,0 +1,50 @@
+.contenedor1{
+    background-color: rgb(127, 255, 155);
+    display: flex;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    min-height: 5rem;
+    align-items: start;
+    justify-content: center;
+    flex-grow:initial ;
+
+
+}
+
+.item{
+    background-color: salmon;
+    padding: 0.25rem;
+}
+
+
+.contenedor2{
+    background-color: aquamarine;
+    display: flex;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    min-height: 5rem;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+
+
+}
+
+.item{
+    background-color: salmon;
+    padding: 0.25rem;
+}
+
+@media (max-width: 640px){
+    .contenedor2{
+        flex-direction:row ;
+        align-items: end;
+    }
+}
+
+@media (max-width: 640px){
+    .contenedor1{
+        flex-direction:column ;
+        align-items: center;
+    }
+}
